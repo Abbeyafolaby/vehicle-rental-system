@@ -1,10 +1,10 @@
 public class Car extends Vehicle{
 
-    private final int numOfSeats;
+    private final int numberOfSeats;
 
     public Car(String brand, String model, double rentalPricePerDay, int numOfSeats) {
         super(brand, model, rentalPricePerDay);
-        this.numOfSeats = numOfSeats;
+        this.numberOfSeats = numOfSeats;
     }
 
     @Override
@@ -15,7 +15,7 @@ public class Car extends Vehicle{
     @Override
     public void display() {
         super.display();
-        System.out.println("It has a total seat of " + numOfSeats);
+        System.out.println("Seat: " + numberOfSeats);
     }
 
 }

@@ -20,9 +20,7 @@ public class Main {
 
         // Calculate revenue
         int rentalDays = 7;
-        System.out.println("Total revenue for " + rentalDays + " days: $"
-                + agency.getTotalRevenue(rentalDays));
-
+        System.out.printf("Total revenue for %d days: $%.2f%n", rentalDays, agency.getTotalRevenue(rentalDays));
 
     }
 }

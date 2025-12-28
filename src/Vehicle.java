@@ -5,6 +5,9 @@ public abstract class Vehicle {
     protected double rentalPricePerDay;
 
     public Vehicle(String brand, String model, double rentalPricePerDay) {
+        if (rentalPricePerDay < 0) {
+            throw new IllegalArgumentException("Rental price cannot be negative");
+        }
         this.brand = brand;
         this.model = model;
         this.rentalPricePerDay = rentalPricePerDay;
